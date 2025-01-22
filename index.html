@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1></h1>
+      <p class="instructions">How to play</p>
+      <p class="instructions">Click the cookie to collect more cookies</p>
+      <p class="instructions">
+        When enough have been collected purchase upgrades from the shop
+      </p>
+    </header>
+    <div class="main">
+      <section class="gui">
+        <img
+          id="center-cookie"
+          src="cookieclicker.png"
+          alt="center cookie to click"
+        />
+        <div class="container">
+          <p class="text-base">Cookies Collected:</p>
+          <p class="text-large" id="cookiePerSecond"></p>
+          <p class="text-base">Cookies Per Second:</p>
+          <p class="cps" id="cpsId">CPS:</p>
+        </div>
+      </section>
+      <section id="shop" class="shop">
+        <p class="text-large">Shop</p>
+      </section>
+    </div>
+    <footer>An attempt at a cookie clicker, Liam Collins™</footer>
+  </body>
+</html>

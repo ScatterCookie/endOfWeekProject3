@@ -36,7 +36,12 @@ centerCookie.addEventListener("click", function () {
 
 function getCPS() {}
 
-async function getUpgrades() {}
+async function getUpgrades() {
+  const result = await fetch(
+    "https://cookie-upgrade-api.vercel.app/api/upgrades"
+  );
+  const upgrades = await result.json();
+}
 
 function openShop(params) {}
 

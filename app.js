@@ -12,9 +12,27 @@ const cps = document.getElementById("cps");
 const shop = document.getElementById("shop");
 const centerCookie = document.getElementById("center-cookie");
 
-const game = function () {};
+const game = function () {
+  loadGame();
+  getUpgrades();
 
-centerCookie.addEventListener("click", function () {});
+  setInterval(() => {
+    updateUI(initialState);
+  }, 100);
+  setInterval(() => {
+    initialState.cookies += getCPS();
+    saveGame();
+    cps.innerText = getCPS();
+  }, 1000);
+};
+
+centerCookie.addEventListener("click", function () {
+  centerCookie.classList.toggle("inflate");
+  initialState.cookies += 1;
+  setTimeout(() => {
+    centerCookie.classList.toggle("inflate");
+  }, 150);
+});
 
 function getCPS() {}
 

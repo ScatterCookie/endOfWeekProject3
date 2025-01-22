@@ -22,6 +22,10 @@ body {
 .cps {
 }
 
+.inflate {
+  scale: 1.05;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -41,13 +45,22 @@ img {
 }
 
 .main {
+  grid-area: 2 / 2 / 3 / 5;
+  display: grid;
 }
 
 .gui {
+  grid-area: cookie-hud;
+  display: flex;
+  justify-content: space-around;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer {
+  grid-area: 3 / 2 / 4 / 5;
 }

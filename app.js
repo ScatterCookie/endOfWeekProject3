@@ -11,7 +11,7 @@ const shop = document.getElementById("shop");
 const centerCookie = document.getElementById("center-cookie");
 
 const game = function () {
-  // loadGame();
+  loadGame();
   getUpgrades();
 
   setInterval(() => {
